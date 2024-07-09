@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video KYC</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="continuePage">
+    <div id="instructions" class="instruction-text">Please grant access to your camera and click Continue to capture your photo.</div>
+    <button id="continueBtn" class="continue-button">Continue</button>
+  </div>
+
+  <div id="capturePage" style="display: none;">
+    <video id="videoElement" class="video-feed" autoplay playsinline muted></video>
+    <button id="captureBtn" class="capture-button">Capture Photo</button>
+    <canvas id="canvasElement" class="canvas" style="display: none;"></canvas>
+    <button id="confirmBtn" class="confirm-button" style="display: none;">Confirm</button>
+    <button id="retakeBtn" class="retake-button" style="display: none;">Retake</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
